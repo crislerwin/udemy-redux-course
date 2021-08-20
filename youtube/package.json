@@ -1,0 +1,21 @@
+{
+  "name": "youtube",
+  "version": "1.0.0",
+  "description": "Aplicação para estudo do curso de Redux",
+ "private": true,
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "keywords": [
+    "React",
+    "Redux",
+    "ReactRedux",
+    "Youtube Clone",
+    "Curso de Redux"
+  ],
+  "author": "Crisler Wintler",
+  "license": "MIT"
+}
