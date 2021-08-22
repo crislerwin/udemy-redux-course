@@ -1,0 +1,15 @@
+.container {
+  display: grid;
+  
+  grid-template-areas: 
+  'search-bar search-bar search-bar search-bar'
+  'video-player video-player video-player video-list'
+  'video-player video-player video-player video-list'
+  'video-player video-player video-player video-list';
+  
+}
+
+.search-bar {
+  grid-area: search-bar;
+  background: red;
+}
