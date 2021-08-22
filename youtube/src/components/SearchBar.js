@@ -1,8 +1,8 @@
 import { Component } from "react";
 import { Segment, Input } from "semantic-ui-react";
 import { buscaVideo } from "../redux/actions/busca-video";
-
 import { connect } from "react-redux";
+
 class SearchBar extends Component {
   buscaVideo = (e) => {
     if (e.keyCode === 13) {
@@ -26,10 +26,16 @@ class SearchBar extends Component {
     );
   }
 }
-
+const mapStateToProps = (state) => {
+  return {
+    carregando: state.busca.carregando,
+    erro: state.busca.erro,
+    videos: state.busca.videos,
+  };
+};
 const mapDispatchToProps = (dispatch) => {
   return {
     buscaVideo: (termo) => dispatch(buscaVideo(termo)),
   };
 };
-export default connect(null, mapDispatchToProps)(SearchBar);
+export default connect(mapStateToProps, mapDispatchToProps)(SearchBar);
