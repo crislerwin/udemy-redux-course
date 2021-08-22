@@ -1,4 +1,4 @@
-import { combineReducers } from 'redux-redux';
+import { combineReducers } from 'redux';
 import busca
  from './busca';
 

@@ -1,6 +1,7 @@
 import youtubeSearch from 'youtube-api-v3-search';
+import { API_KEY } from '../../api';
 
-const API_KEY = process.env.YOUTUBE_API_KEY;
+
 
 export const buscaVideoRequest = () => {
     return {
